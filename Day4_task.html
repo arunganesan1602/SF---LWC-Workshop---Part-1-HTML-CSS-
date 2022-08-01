@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Day4_task</title>
+    </head>
+
+    <body>
+        <canvas id="canvas1" width="600" height="300" style="border:10px solid blue;"></canvas>
+        <script>
+            var s = document.getElementById("canvas1")
+            var shape = s.getContext("2d");
+            shape.fillStyle = "#FF0000";
+            shape.fillRect(0, 0, 600, 300);
+            var shape1 = s.getContext("2d");
+            shape1.fillStyle = "#00FF00";
+            shape1.fillRect(200, 100, 200, 100);
+        </script>
+
+        <h1>Datalist</h1>
+        <input list="color" name="colorname" id="colorid">
+        <datalist id="color">
+        <option value="red">
+        <option value="green">
+        <option value="blue">
+        <option value="yellow">
+        <option value="orange">
+        </datalist>
+    </body>
+</html>
